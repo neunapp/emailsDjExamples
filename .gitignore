@@ -1,0 +1,13 @@
+# Archivos generados por Python
+*.pyc
+__pycache__/
+
+# Entornos virtuales de Python (por ejemplo, virtualenv, pipenv)
+venv/
+env/
+.env/
+
+#
+dist/
+build/
+*.egg-info/
