@@ -4,8 +4,7 @@ from django.conf import settings
 from django.views.generic import FormView
 from django import forms
 #
-from .functions import send_mail_google
-# Create your views here.
+from .sendgrid_example import send_mail_sendgrid
 
 class EmailForm(forms.Form):
     email = forms.EmailField(label='Correo electrónico')
@@ -19,6 +18,6 @@ class EnviarMesaje(FormView):
     
     def form_valid(self, form):
         print(form.cleaned_data['email'])
-        send_mail_google()
+        send_mail_sendgrid()
         return super().form_valid(form)
         

@@ -20,5 +20,5 @@ from applications.home.views import EnviarMesaje
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('send', EnviarMesaje.as_view(), name='send-mail')
+    path('send/', EnviarMesaje.as_view(), name='send-mail')
 ]
